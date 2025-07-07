@@ -1,0 +1,33 @@
+<resources>
+    <string name="ac">AC</string>
+    <string name="c">C</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="log">log</string>
+    <string name="ln">ln</string>
+    <string name="x">x!</string>
+    <string name="square">x²</string>
+    <string name="root">√</string>
+    <string name="inverse">1/x</string>
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="equal">=</string>
+    <string name="pi">π</string>
+    <string name="dot">.</string>
+    <string name="open_bracket">(</string>
+    <string name="close_bracket">)</string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="CalculatorApp">CalculatorApp\n</string>
+</resources>

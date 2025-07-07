@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_3"
+    tools:context="MainActivity">
+
+    <!-- Secondary Text -->
+    <TextView
+        android:id="@+id/idTVSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black_shade_3"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:paddingTop="30dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="RtlCompat" />
+
+    <!-- Primary Text -->
+    <TextView
+        android:id="@+id/idTVprimary"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/idTVSecondary"
+        android:background="@color/black_shade_3"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        tools:ignore="RtlCompat" />
+
+    <!-- Calculator Buttons -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idTVprimary"
+        android:background="@color/black_shade_1"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/black_shade_1"
+            android:weightSum="7">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <Button android:id="@+id/bac" style="@style/FuncButton" android:text="@string/ac" />
+                <Button android:id="@+id/bc" style="@style/FuncButton" android:text="@string/c" />
+                <Button android:id="@+id/bbrac1" style="@style/FuncButton" android:text="@string/open_bracket" />
+                <Button android:id="@+id/bbrac2" style="@style/FuncButton" android:text="@string/close_bracket" />
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button android:id="@+id/bsin" style="@style/FuncButton" android:text="@string/sin" />
+                <Button android:id="@+id/bcos" style="@style/FuncButton" android:text="@string/cos" />
+                <Button android:id="@+id/btan" style="@style/FuncButton" android:text="@string/tan" />
+                <Button android:id="@+id/blog" style="@style/FuncButton" android:text="@string/log" />
+                <Button android:id="@+id/bln"  style="@style/FuncButton" android:text="@string/ln" />
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button android:id="@+id/bfact" style="@style/FuncButton" android:text="@string/x" />
+                <Button android:id="@+id/bsquare" style="@style/FuncButton" android:text="@string/square" />
+                <Button android:id="@+id/bsqrt" style="@style/FuncButton" android:text="@string/root" />
+                <Button android:id="@+id/binv" style="@style/FuncButton" android:text="@string/inverse" />
+                <Button android:id="@+id/bdiv" style="@style/FuncButton" android:text="@string/divide" />
+            </LinearLayout>
+
+            <!-- Row 4 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:orientation="horizontal" android:weightSum="4">
+
+                <Button android:id="@+id/b7" style="@style/NumButton" android:text="@string/_7" />
+                <Button android:id="@+id/b8" style="@style/NumButton" android:text="@string/_8" />
+                <Button android:id="@+id/b9" style="@style/NumButton" android:text="@string/_9" />
+                <Button android:id="@+id/bmul" style="@style/OpButton" android:text="@string/multiply" />
+            </LinearLayout>
+
+            <!-- Row 5 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:orientation="horizontal" android:weightSum="4">
+
+                <Button android:id="@+id/b4" style="@style/NumButton" android:text="@string/_4" />
+                <Button android:id="@+id/b5" style="@style/NumButton" android:text="@string/_5" />
+                <Button android:id="@+id/b6" style="@style/NumButton" android:text="@string/_6" />
+                <Button android:id="@+id/bminus" style="@style/OpButton" android:text="@string/minus" />
+            </LinearLayout>
+
+            <!-- Row 6 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:orientation="horizontal" android:weightSum="4">
+
+                <Button android:id="@+id/b1" style="@style/NumButton" android:text="@string/_1" />
+                <Button android:id="@+id/b2" style="@style/NumButton" android:text="@string/_2" />
+                <Button android:id="@+id/b3" style="@style/NumButton" android:text="@string/_3" />
+                <Button android:id="@+id/bplus" style="@style/OpButton" android:text="@string/plus" />
+            </LinearLayout>
+
+            <!-- Row 7 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:orientation="horizontal" android:weightSum="4">
+
+                <Button android:id="@+id/bpi" style="@style/NumButton" android:text="@string/pi" />
+                <Button android:id="@+id/b0" style="@style/NumButton" android:text="@string/_0" />
+                <Button android:id="@+id/bdot" style="@style/NumButton" android:text="@string/dot" />
+                <Button android:id="@+id/bequal" style="@style/OpButton" android:text="@string/equal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
